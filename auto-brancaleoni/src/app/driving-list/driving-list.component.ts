@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Drive } from '../driving.model';
+import { Rent } from '../rent.model';
 
 @Component({
   selector: 'app-driving-list',
@@ -9,6 +10,7 @@ import { Drive } from '../driving.model';
 })
 export class DrivingListComponent implements OnInit {
 
+  @Input() rentList: Rent[];
   driveList : Drive[] = new Array<Drive>();
   selectedCar: Drive;
 
