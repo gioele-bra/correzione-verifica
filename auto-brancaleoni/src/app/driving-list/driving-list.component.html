@@ -1,4 +1,4 @@
 <!--{{driveList | json}}-->
 <ul>
-  <li *ngFor="let drive of driveList">{{drive.tipo}} | {{drive.tariffa}}</li>
+  <li *ngFor="let drive of driveList"><button (click)="onClick(drive)">Noleggia</button>{{drive.tipo}} | {{drive.tariffa}}</li>
 </ul>

@@ -18,7 +18,12 @@ export class DrivingListComponent implements OnInit {
       (auto: Drive[]) => {
         this.driveList = auto;
       }
-    )
+    );
+  }
+
+  onClick(auto: Drive): boolean{
+
+    return false;
   }
 
 }
