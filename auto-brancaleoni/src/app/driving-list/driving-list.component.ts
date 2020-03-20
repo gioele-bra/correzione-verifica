@@ -10,6 +10,7 @@ import { Drive } from '../driving.model';
 export class DrivingListComponent implements OnInit {
 
   driveList : Drive[] = new Array<Drive>();
+  selectedCar: Drive;
 
   constructor(public http: HttpClient) { }
 
@@ -23,6 +24,7 @@ export class DrivingListComponent implements OnInit {
 
   onClick(auto: Drive): boolean{
     console.log(auto);
+    this.selectedCar = auto;
     return false;
   }
 
