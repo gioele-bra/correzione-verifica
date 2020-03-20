@@ -3,11 +3,14 @@ import { Drive } from './driving.model';
 export class Rent{
 
   drive: Drive;
-  n_rent: number;
+  n_rent: number = 1;
 
-  constructor(drive: Drive, n_rent: number){
+  constructor(drive: Drive){
     this.drive = drive;
-    this.n_rent = n_rent;
+  }
+
+  rentAgain():void {
+    this.n_rent += 1;
   }
 
 }

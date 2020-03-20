@@ -8,7 +8,7 @@ import { Drive } from '../driving.model';
 })
 export class RentedComponent implements OnInit {
 
-  @Input() drive: Drive[] = new Array<Drive>();
+  @Input() drive: Drive;
 
   constructor() { }
 

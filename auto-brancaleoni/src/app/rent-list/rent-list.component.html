@@ -1,1 +1,6 @@
-<p>rent-list works!</p>
+<p>Elenco dei noleggi</p>
+<ul>
+<li *ngFor="let rent of rentList">
+{{rent.drive.tipo}} | {{rent.n_rent}}
+</li>
+</ul>
