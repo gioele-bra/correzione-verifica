@@ -27,6 +27,7 @@ export class DrivingListComponent implements OnInit {
   onClick(auto: Drive): boolean{
     console.log(auto);
     this.selectedCar = auto;
+    this.rentList.push(new Rent(auto, 1));
     return false;
   }
 
