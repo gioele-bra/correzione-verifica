@@ -22,7 +22,7 @@ export class DrivingListComponent implements OnInit {
   }
 
   onClick(auto: Drive): boolean{
-
+    console.log(auto);
     return false;
   }
 
