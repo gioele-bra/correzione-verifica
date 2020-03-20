@@ -9,7 +9,7 @@ export class Rent{
     this.drive = drive;
   }
 
-  rentAgain():void {
+  rentAgain(): void {
     this.n_rent += 1;
   }
 
