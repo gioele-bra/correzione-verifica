@@ -25,10 +25,20 @@ export class DrivingListComponent implements OnInit {
   }
 
   onClick(auto: Drive): boolean{
+    let v = 0;
     console.log(auto);
     this.selectedCar = auto;
 
-    this.rentList.push(new Rent(auto));
+    for(let i = 0; i < this.rentList.length; i++){
+      if (this.rentList[i].drive == auto){
+        this.rentList[i].rentAgain();
+        v++;
+      }
+    }
+
+    if (v == 0){
+      this.rentList.push(new Rent(auto));
+    }
 
     return false;
   }
